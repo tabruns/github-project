@@ -34,6 +34,7 @@ class Page
 		echo "</head>";
 		echo "<body>";
 		echo "<div class='pageWrapper' id='pagewrapper' >";
+		echo "<div class='main'>";
 	}
 
 	public function body()
