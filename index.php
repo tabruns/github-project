@@ -5,6 +5,7 @@ include 'snacke/include/config.php';
 class Index extends Page
 {
 	public $title = "Index";
+	public $style = "snacke/css/style.css";
 	
 	public function __construct()
 	{
