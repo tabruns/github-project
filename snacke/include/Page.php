@@ -3,6 +3,7 @@
 class Page
 {
 	public $title = "Snacke";
+	public $style = "../css/style.css";
 	
 	public function __construct()
 	{
@@ -26,7 +27,7 @@ class Page
 			// echo "<script type='text/javascript' src='".$this->script."'></script>";
 		// }
 		echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-		// echo "<link rel='stylesheet' type='text/css' href='/newsletter/style.css' />";
+		echo "<link rel='stylesheet' type='text/css' href='".$this->style."' />";
 		echo "<link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' type='text/css' />";
 		echo "</head>";
 		echo "<body>";
