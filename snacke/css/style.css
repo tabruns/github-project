@@ -63,6 +63,28 @@ p.level
 	margin: 25px;
 	color:black;
 }
+
+div.pageWrapper
+{
+    min-height: 100%;
+}
+
+div.main
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 850px;
+}
+div.main
+{
+    margin: auto;
+    padding: 0;
+    width: auto;
+    overflow: hidden;
+}
+
+
 .wand
 {
 	background:#663300;
