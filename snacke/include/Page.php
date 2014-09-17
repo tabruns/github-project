@@ -4,6 +4,7 @@ class Page
 {
 	public $title = "Snacke";
 	public $style = "../css/style.css";
+	public $script = "";
 	
 	public function __construct()
 	{
@@ -22,10 +23,11 @@ class Page
 		echo "<script src='http://code.jquery.com/jquery-1.10.2.js'></script>";
 		echo "<script src='http://code.jquery.com/ui/1.11.1/jquery-ui.js'></script>";
 				
-		// if(!empty($this->script))
-		// {
-			// echo "<script type='text/javascript' src='".$this->script."'></script>";
-		// }
+		if(!empty($this->script))
+		{
+			echo "<script type='text/javascript' src='".$this->script."'></script>";
+		}
+		
 		echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 		echo "<link rel='stylesheet' type='text/css' href='".$this->style."' />";
 		echo "<link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' type='text/css' />";
