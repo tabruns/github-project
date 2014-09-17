@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 include 'snacke/include/config.php';
 
 class Index extends Page
