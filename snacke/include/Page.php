@@ -2,9 +2,10 @@
 
 class Page
 {
-	public $title = "Snacke";
-	public $style = "../css/style.css";
+	public $title = "newSeite";
+	public $style = "css/style.css";
 	public $script = "";
+	
 	
 	public function __construct()
 	{
@@ -30,7 +31,6 @@ class Page
 		
 		echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 		echo "<link rel='stylesheet' type='text/css' href='".$this->style."' />";
-		echo "<link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' type='text/css' />";
 		echo "</head>";
 		echo "<body>";
 		echo "<div class='pageWrapper' id='pagewrapper' >";
@@ -38,7 +38,7 @@ class Page
 
 	public function body()
 	{
-		echo "Hier";
+		
 	}
 	
 	public function footer()
@@ -46,10 +46,10 @@ class Page
 		echo "</div><!-- .main -->";
 		echo "</div><!-- #pagewrapper -->";
 		echo "</body>";
-		echo "</html>";		
+		echo "</html>";
 	}
 	
-	public function __desctruct()
+	public function __destruct()
 	{
 		$this->header();
 		$this->body();
